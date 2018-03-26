@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1522101865 source:c:\users\sebastian\desktop\studia\proi\projekt 1 listy\projekt 1\classes.cpp
+	<iostream>
+	"classes.hpp"
+
+1522101995 c:\users\sebastian\desktop\studia\proi\projekt 1 listy\projekt 1\classes.hpp
+	<iostream>
+
+1522101792 source:c:\users\sebastian\desktop\studia\proi\projekt 1 listy\projekt 1\main.cpp
+	<iostream>
+	<string>
+	<stdlib.h>
+	<cstring>
+	"classes.hpp"
+
