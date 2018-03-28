@@ -187,8 +187,8 @@ void List::delDuplicates() {
     actual = first;
     prev = first;
     next = actual -> getNext();
-    while(actual != NULL) {
-            while(next != NULL) {
+    do {
+            do {
             if(next -> getValue() == actual -> getValue()){
                 prev -> setNext(next -> getNext());
                 delete &next;
@@ -198,7 +198,7 @@ void List::delDuplicates() {
                 prev = next;
                 next = next -> getNext();
             }
-        }
+        } while(next != first);
         if(actual -> getNext() != NULL){
             actual = actual -> getNext();
             prev = actual;
@@ -206,7 +206,7 @@ void List::delDuplicates() {
         }
         else
             actual = NULL;
-    }
+    } while(actual != first);
 
 }
 //METODY DODAWANIA ELEMENTOW
